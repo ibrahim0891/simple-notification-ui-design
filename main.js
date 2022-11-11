@@ -7,7 +7,8 @@ let mainBody = document.getElementById('main')
 let clock = document.getElementById('clock')
 let calender = document.getElementById('calender')
 var minPopUp = document.getElementById('miniPopUp')
- 
+var notification = document.querySelectorAll('.notification')
+var clearAll = document.getElementById('clearAll')
 //Function to show more tiles
 more.style.height = '0px'
 expand.addEventListener('click', () => {
@@ -76,4 +77,15 @@ flashlight.addEventListener('click',()=>{
     }, 8000)
 })
 
-alert('It have some little fuctionlity. Try clicking the tiles and changing the brightness.')
+// alert('It have some little fuctionlity. Try clicking the tiles and changing the brightness.')
+
+clearAll.addEventListener('click',()=>{
+        notification.forEach((items) => {
+            items.style.transform = 'translateX(100%)'
+        })
+        setTimeout(()=>{
+            notification.forEach((items) => {
+                items.style.transform = 'translateX(0)'
+            })
+        },2000)
+})

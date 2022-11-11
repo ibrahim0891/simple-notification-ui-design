@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
-
-* {
-    font-family: 'popins';
-    font-weight: 400;
-    transition: all 500ms linear;
+@font-face {
+    font-family: 'google';
+    src: url('GoogleSansText-Regular.ttf');
+}
+*{
+    font-family: google;
+    transition: all 0.4s linear;
 }
 
- 
+.bg-main {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
