@@ -87,5 +87,5 @@ clearAll.addEventListener('click',()=>{
             notification.forEach((items) => {
                 items.style.transform = 'translateX(0)'
             })
-        },2000)
+        },3000)
 })
