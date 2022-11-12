@@ -16,9 +16,9 @@
     </script>
 </head>
 
-<body class='bg-[url()] flex items-center justify-center bg-main'>
-    <div id="main" class='relative aspect-[9/20] max-w-[420px] md:max-w-[auto] md:h-[90vh] border my-12 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-2xl shadow-blue-500/50'>
-        <div class="w-full px-8 dark:text-white">
+<body class='bg-[url()] dark:bg-black flex items-center justify-center bg-main'>
+    <div id="main" class='relative aspect-[9/20] max-w-[420px] border dark:border-0 my-12 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden md:hover:scale-[1.1] md:hover:translate-y-[1rem] shadow-2xl shadow-blue-500/50'>
+        <div class="w-full px-7 dark:text-white">
             <div class='flex items-center justify-between pt-12'>
                 <p id="clock"> 12:00 pm </p>
                 <div class="">
@@ -58,7 +58,7 @@
                 <ion-icon name="remove-outline" onclick="expandQuickSettingPanel()" class="hover:scale-110 text-black hover:text-black dark:text-white"> </ion-icon>
             </div>
         </div>
-        <div class="px-7 bg-white border dark:bg-slate-800 text-black dark:text-gray-100  rounded-bl-lg rounded-br-lg notification">
+        <div class="px-7 bg-white border dark:border-0 dark:bg-slate-800 text-black dark:text-gray-100  rounded-bl-lg rounded-br-lg notification">
             <div class="flex items-center justify-between py-4 pb-1 ">
                 <p class="flex items-center">
                     <ion-icon class="mr-2" name="color-palette-outline"></ion-icon> Notification UI &nbsp 11:05AM
@@ -72,7 +72,7 @@
         </div>
 
 
-        <div class="px-7 bg-white border border-t-0 dark:bg-slate-800 text-black dark:text-gray-100 rounded-bl-lg rounded-br-lg notification shadow-md shadow-slate-900/10">
+        <div class="px-7 bg-white border border-t-0 dark:border-0 dark:bg-slate-800 text-black dark:text-gray-100 rounded-bl-lg rounded-br-lg notification shadow-md shadow-slate-900/10">
             <div class="flex items-center justify-between py-4 pb-1 ">
                 <p class="flex items-center">
                     <ion-icon class="mr-2" name="cloud-done-outline"></ion-icon> Cloud Storage &nbsp 1:05AM
@@ -88,10 +88,9 @@
             <button id="clearAll">
                 <ion-icon class='text-black dark:text-white' name="close-circle-outline"></ion-icon>
             </button>
-
-            <span id='miniPopUp' class="absolute bottom-12 left-[50%] text-center -translate-x-[50%] dark:bg-gray-200 bg-slate-900/90 text-white dark:text-black rounded-md shadow-md px-4 py-2 opacity-0 w-[2/3] shadow-lg shadow-slate-800/40 text-sm"></span>
         </div>
     </div>
+    <span id='miniPopUp' class="absolute bottom-12 left-[50%] text-center -translate-x-[50%] dark:bg-gray-200 bg-slate-900/90 text-white dark:text-black rounded-md shadow-md px-4 py-2 opacity-0 w-[2/3] shadow-lg shadow-slate-800/40 text-sm"></span>
 </body>
 
 <script src="main.js"></script>
