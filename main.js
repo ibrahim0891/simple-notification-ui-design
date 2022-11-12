@@ -41,7 +41,7 @@ brightness.addEventListener('change', function() {
     miniPopUp.innerText = 'Brightnes set to ' + brightnessBar.value + '%'
     setTimeout(() => {
         miniPopUp.style.opacity = 0
-    }, 5000)
+    }, 6000)
 })
 
 //switch between light and dark theme
@@ -56,7 +56,7 @@ darkSwitch.addEventListener('click', () => {
     }
     setTimeout(() => {
         miniPopUp.style.opacity = 0
-    }, 3000)
+    }, 6000)
 
 })
 
@@ -66,28 +66,28 @@ window.addEventListener('load', () => {
     //show an alert if user is viewing the page in landscape mode
     if (window.innerHeight < window.innerWidth) {
         miniPopUp.style.opacity = 1
-        miniPopUp.innerText = 'Please make your browser window portrait for better vieew.'
+        miniPopUp.innerText = 'Please make your browser window PORTRAIT for better view.'
         setTimeout(() => {
             miniPopUp.style.opacity = 0
-        }, 3000)
+        }, 7000)
 
         function showSuggestion() {
             miniPopUp.style.opacity = 1
             miniPopUp.innerText = 'Click EXPAND icon to open rest of the icons. '
             setTimeout(() => {
                 miniPopUp.style.opacity = 0
-            }, 4000)
+            }, 6000)
         }
         setTimeout(() => {
             showSuggestion()
-        }, 3000)
+        }, 5000)
     } else {
         //this block help to show suggestion if user is using a portrait window.
         miniPopUp.style.opacity = 1
         miniPopUp.innerText = 'Click EXPAND icon to open rest of the icons. '
         setTimeout(() => {
             miniPopUp.style.opacity = 0
-        }, 4000)
+        }, 6000)
     }
     var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     setInterval(() => {
@@ -125,7 +125,7 @@ flashlight.addEventListener('click', () => {
     miniPopUp.innerText = 'Flashlight cannot be turned on from browser. If you are viewing this page from mobile than pull down the notification panel and click the flashlight icon'
     setTimeout(() => {
         miniPopUp.style.opacity = 0
-    }, 8000)
+    }, 9000)
 })
 
 //         alert('It have some little fuctionlity. Try clicking the tiles and changing the brightness.')
